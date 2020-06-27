@@ -1,0 +1,204 @@
+<html>
+<link rel="stylesheet" type="text/css" href="css/styles.css" media="all">
+<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" type="text/css">
+<script src="js/jquery-1.7.2.min.js"></script>
+<script src="js/filter.js"></script>
+<body>
+  <div class="container">
+    <div class="inner-container">
+      <div class="interiorh1heading grid-container">
+        <div class="grid12-12">
+          <hr style="height: 1pt; border: none; color: #EAE6E6; background-color: #EAE6E6;">
+          <h1>Demo for JS Filter</h1>
+          <hr style="height: 1pt; border: none; color: #EAE6E6; background-color: #EAE6E6;">
+        </div>
+      </div>
+     
+      <section class="section section--products">
+        <div class="category-filters">
+          <div class="filter-wrapper">
+            <div class="filter-title">Filter by</div>
+            <div class="category-filter-item cat-dropdown">
+              <label class="dropdown-label">Style</label>
+
+              <div class="dropdown-list">
+                <div class="checkbox">
+                  <input value="shaker" type="checkbox" name="dropdown-group" class="check checkbox-custom"
+                    id="shaker" />
+                  <label for="shaker" class="checkbox-custom-label">Shaker</label>
+                </div>
+                <div class="checkbox">
+                  <input value="raised-panel" type="checkbox" name="dropdown-group" class="check checkbox-custom"
+                    id="raised-panel" />
+                  <label for="raised-panel" class="checkbox-custom-label">Raised Panel</label>
+                </div>
+                <div class="checkbox">
+                  <input value="recessed-panel" type="checkbox" name="dropdown-group" class="check checkbox-custom"
+                    id="recessed-panel" />
+                  <label for="recessed-panel" class="checkbox-custom-label">Recessed Panel</label>
+                </div>
+              </div>
+            </div>
+            <div class="category-filter-item finish-dropdown">
+              <label class="dropdown-label">Finish</label>
+
+              <div class="dropdown-list">
+                <div class="checkbox">
+                  <input value="white-kitchen-cabinets" type="checkbox" name="dropdown-group"
+                    class="check checkbox-custom" id="white-kitchen-cabinets" />
+                  <label for="white-kitchen-cabinets" class="checkbox-custom-label"> White Kitchen Cabinets</label>
+                </div>
+                <div class="checkbox">
+                  <input value="light-kitchen-cabinets" type="checkbox" name="dropdown-group"
+                    class="check checkbox-custom" id="light-kitchen-cabinets" />
+                  <label for="light-kitchen-cabinets" class="checkbox-custom-label">Light Kitchen Cabinets</label>
+                </div>
+              </div>
+            </div>
+            <div class="category-filter-item color-dropdown">
+              <label class="dropdown-label">Color</label>
+
+              <div class="dropdown-list">
+                <div class="checkbox">
+                  <input value="1" type="radio" name="dropdown-group" class="check checkbox-custom"
+                    id="light-to-dark" />
+                  <label for="light-to-dark" class="checkbox-custom-label radio-custom-label">Light To Dark</label>
+                </div>
+                <div class="checkbox">
+                  <input value="10" type="radio" name="dropdown-group" class="check checkbox-custom"
+                    id="dark-to-light" />
+                  <label for="dark-to-light" class="checkbox-custom-label radio-custom-label">Dark To Light</label>
+                </div>
+              </div>
+            </div>
+            <div class="category-filter-item price-dropdown">
+              <label class="dropdown-label">Price</label>
+
+              <div class="dropdown-list">
+                <div class="checkbox">
+                  <input value="asc" type="radio" name="dropdown-group" class="check checkbox-custom" id="asc" />
+                  <label for="asc" class="checkbox-custom-label radio-custom-label">Lowest to Highest</label>
+                </div>
+                <div class="checkbox">
+                  <input value="desc" type="radio" name="dropdown-group" class="check checkbox-custom" id="desc" />
+                  <label for="desc" class="checkbox-custom-label radio-custom-label">Highest to Lowest</label>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="filter-attribute">
+            <div class="style-filter filter-val"></div>
+            <div class="finish-filter filter-val"></div>
+            <div class="price-filter filter-val"></div>
+            <div class="color-filter filter-val"></div>
+          </div>
+          <span class="clear-filters">Clear filters</span>
+        </div>
+
+        <div class="container">
+          <div class="section__body">
+            <ul class="products-list">
+              <li data-style=["shaker","raised-panel"] data-finish=["white-kitchen-cabinets"] data-price="100" data-color="1" class="product-wrapper">
+                <div class="product__entry">
+                  <div class="product__image" style="background-image: url(images/placeholder.png)"></div><!-- /.product__image -->
+                  <div class="product__image product__image-kitchen" style="background-image: url(images/placeholder-hover.png)">
+                    <a href="#"></a>
+                  </div><!-- /.product__image -->
+                  <div class="price-tag">
+                    <p>AVERAGE 10X10 PRICE <b>$2,238</b></p>
+                  </div><!-- /.price-tag -->
+                </div><!-- /.product__entry -->
+                <div class="product__content">
+                  <h5><a href="#">Cherry Glaze1</a></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="interiorpricing">
+                    <a href="#" class="button btn-cart" title="Shop Now">Shop Now</a>
+                  </div>
+                </div><!-- /.product__content -->
+              </li>
+              <li data-style=["raised-panel"] data-finish=["white-kitchen-cabinets","light-kitchen-cabinets"] data-price="200" data-color="3" class="product-wrapper">
+                <div class="product__entry">
+                  <div class="product__image" style="background-image: url(images/placeholder.png)"></div><!-- /.product__image -->
+                  <div class="product__image product__image-kitchen" style="background-image: url(images/placeholder-hover.png)">
+                    <a href="#"></a>
+                  </div><!-- /.product__image -->
+                  <div class="price-tag">
+                    <p>AVERAGE 10X10 PRICE <b>$2,238</b></p>
+                  </div><!-- /.price-tag -->
+                </div><!-- /.product__entry -->
+                <div class="product__content">
+                  <h5><a href="#">Cinnamon Glaze2</a></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="interiorpricing">
+                    <a href="#" class="button btn-cart" title="Shop Now">Shop Now</a>
+                  </div>                  
+                </div><!-- /.product__content -->
+              </li>
+
+              <li data-style=["raised-panel"] data-finish=["white-kitchen-cabinets"] data-price="150" data-color="2" class="product-wrapper">
+                <div class="product__entry">
+                  <div class="product__image" style="background-image: url(images/placeholder.png)"></div><!-- /.product__image -->
+                  <div class="product__image product__image-kitchen" style="background-image: url(images/placeholder-hover.png)">
+                    <a href="#"></a>
+                  </div><!-- /.product__image -->
+                  <div class="price-tag">
+                    <p>AVERAGE 10X10 PRICE <b>$2,238</b></p>
+                  </div><!-- /.price-tag -->
+                </div><!-- /.product__entry -->
+                <div class="product__content">
+                  <h5><a href="#">Cinnamon Glaze3</a></h5>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                  <div class="interiorpricing">
+                    <a href="#" class="button btn-cart" title="Shop Now">Shop Now</a>
+                  </div>                  
+                </div><!-- /.product__content -->
+              </li>
+              <li data-style=["raised-panel"] data-finish=["white-kitchen-cabinets"] data-price="150" data-color="10" class="product-wrapper">
+              <div class="product__entry">
+                <div class="product__image" style="background-image: url(images/placeholder.png)"></div><!-- /.product__image -->
+                <div class="product__image product__image-kitchen" style="background-image: url(images/placeholder-hover.png)">
+                  <a href="#"></a>
+                </div><!-- /.product__image -->
+                <div class="price-tag">
+                  <p>AVERAGE 10X10 PRICE <b>$2,238</b></p>
+                </div><!-- /.price-tag -->
+              </div><!-- /.product__entry -->
+              <div class="product__content">
+                <h5><a href="#">Cinnamon Glaze4</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="interiorpricing">
+                  <a href="#" class="button btn-cart" title="Shop Now">Shop Now</a>
+                </div>               
+              </div><!-- /.product__content -->
+            </li>
+
+            <li data-style=["raised-panel"] data-finish=["white-kitchen-cabinets"] data-price="150" data-color="8" class="product-wrapper">
+              <div class="product__entry">
+                <div class="product__image" style="background-image: url(images/placeholder.png)"></div><!-- /.product__image -->
+                <div class="product__image product__image-kitchen" style="background-image: url(images/placeholder-hover.png)">
+                  <a href="#"></a>
+                </div><!-- /.product__image -->
+                <div class="price-tag">
+                  <p>AVERAGE 10X10 PRICE <b>$2,238</b></p>
+                </div><!-- /.price-tag -->
+              </div><!-- /.product__entry -->
+              <div class="product__content">
+                <h5><a href="#">Cinnamon Glaze5</a></h5>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <div class="interiorpricing">
+                  <a href="#" class="button btn-cart" title="Shop Now">Shop Now</a>
+                </div>                
+              </div><!-- /.product__content -->
+            </li>
+            </ul><!-- /.products-list -->
+          </div><!-- /.section__body -->
+        </div><!-- /.container -->
+      </section><!-- /.section -->
+
+      <!-- American Assembled Start -->
+      
+      <!--end pros and cons container-->
+      
+</body>
+
+</html>
